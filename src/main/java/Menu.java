@@ -58,7 +58,7 @@ public class Menu {
             }
             switch (userChoice) {
                 case "Call":
-                    calling(contact.getName(), contact.phone);
+                    phonebook.calling(contact.getName(), contact.phone);
                     break;
                 case "Send Email":
                     phonebook.sendEmail(contact.name, contact.email);
@@ -74,13 +74,6 @@ public class Menu {
             }
         } while (contact != null);
         handleExit();
-    }
-
-
-    private void calling(String name, String phone) {
-
-        JOptionPane.showMessageDialog(null, "CALLING " + name + "... \n"+phone,
-                "PHONE CALL", JOptionPane.OK_CANCEL_OPTION);
     }
 
 

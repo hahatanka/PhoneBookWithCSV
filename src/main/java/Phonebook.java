@@ -128,6 +128,12 @@ public class Phonebook {
                 " has been changed successfully");
     }
 
+    public void calling(String name, String phone) {
+
+        JOptionPane.showMessageDialog(null, "CALLING " + name + "... \n"+phone,
+                "PHONE CALL", JOptionPane.OK_CANCEL_OPTION);
+    }
+
     public void sendEmail(String name, String email) {
         String pathname2 = "/Users/rudens/Desktop/Java docs/MailBox.txt";
         fileHandler.createFile(pathname2);
